@@ -21,9 +21,10 @@ class App extends React.Component {
         console.log(error);
       });
   };
+
   render() {
     const { advice } = this.state;
-    
+
     return (
       <>
         <div id="wrapper">
@@ -43,8 +44,8 @@ class App extends React.Component {
               </span>
             </p>
           </div>
-        
-          <button className="button" onClick= {this.fetchAdvice()}>
+
+          <button className="button" onClick={this.fetchAdvice}>
             <span>GIVE ME ADVICE!</span>
           </button>
         </div>
